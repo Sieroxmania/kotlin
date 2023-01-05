@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DSL JS-Objects and jQuery Example</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script type="module" src="main.js"></script> 
+    </head>
+
+    <body>
+        <h2>Example with vanilla JS and jQuery</h2>
+        
+
+        <form id="taskForm">
+            <label for="taskName">Name:</label>
+            <input type="text" id="taskName" name="taskName">
+            <label for="taskDescription">Description:</label>
+            <input type="text" id="taskDescription" name="taskDescription"><br>
+            <label for="taskDue">Due to:</label>
+            <input type="date" id="taskDue" name="taskDue">
+            <label for="taskStatus">Status:</label>
+            <select id="taskStatus" name="taskStatus">
+                <option selected value="open">Open</option>
+                <option value="closed">Closed</option>
+                <option value="pending">Pending</option>
+              </select>
+        </form> 
+        <br>
+        <div id="outputError"></div>
+        <button id="createTask">Add Task</button>
+        <hr>
+        <h2>Example with Kotlin DSL for HTML</h2>
+        <p>based on <a hred="https://github.com/Kotlin/kotlinx.html">kotlinx</a></p>
+        <a href="src/main/kotlin/Main.kt">Main.kt</a>
+    </body>
+</html> 
+
